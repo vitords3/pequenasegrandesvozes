@@ -304,11 +304,30 @@ function abrirModal(tipo) {
 
 
   if (tipo === "caa") {
-    titulo.innerText = "Modelagem em CAA";
-    texto.innerText =
-      "A Comunicação Aumentativa e Alternativa auxilia crianças com dificuldades de fala a se comunicarem de forma funcional.";
-    img.src = "caa.png";
-  }
+  titulo.innerText = "Modelagem em CAA";
+
+  texto.innerHTML = `
+    <p>
+      A Comunicação Aumentativa e Alternativa (CAA) auxilia crianças que não conseguem
+      se comunicar verbalmente, oferecendo meios funcionais de expressão.
+    </p>
+
+    <p>
+      A modelagem em CAA acontece quando o parceiro de comunicação utiliza o sistema de CAA
+      junto com a fala, mostrando à criança como se comunicar no dia a dia.
+    </p>
+
+    <p>
+      Com orientação adequada, a família aprende a apoiar e fortalecer o desenvolvimento
+      da comunicação da criança de forma contínua e natural.
+    </p>
+
+    <p><strong>Não tenha medo. Dê voz ao seu filho.</strong></p>
+  `;
+
+  img.src = "caa.png";
+}
+
 
   if (tipo === "neuro") {
     titulo.innerText = "Reabilitação Neurológica";
