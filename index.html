@@ -144,20 +144,19 @@
 /* imagem livre, sem corte */
 .banner img {
   width: 100%;
-  height: auto;      /* 🔑 deixa a imagem crescer */
+  max-height: 280px;   /* 🔧 AJUSTE ESSE VALOR */
+  object-fit: contain; /* mostra a imagem inteira */
   display: block;
-  border-radius: 12px 12px 0 0;
 }
 
 /* texto abaixo da imagem */
 .banner-texto {
-  position: static; /* 🔑 remove o overlay */
-  background: #2f6f4e;
+  position: relative;   /* 🔑 muda de absolute pra relative */
+  background: rgba(0,0,0,0.6);
+  padding: 18px 20px;
   color: #fff;
-  padding: 20px;
-  font-size: 15px;
-  line-height: 1.6;
 }
+
 
 /* garante texto branco */
 .banner-texto,
