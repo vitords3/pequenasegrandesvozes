@@ -141,29 +141,31 @@
   overflow: hidden;
 }
 
-/* imagem livre, sem corte */
+/* imagem responsiva e controlada */
 .banner img {
   width: 100%;
-  max-height: 280px;   /* 🔧 AJUSTE ESSE VALOR */
-  object-fit: contain; /* mostra a imagem inteira */
+  height: auto;          /* mantém proporção */
+  max-height: 260px;     /* 🔧 CONTROLA O TAMANHO */
+  object-fit: cover;     /* preenche sem distorcer */
   display: block;
 }
 
-/* texto abaixo da imagem */
+/* texto sempre abaixo da imagem */
 .banner-texto {
-  position: relative;   /* 🔑 muda de absolute pra relative */
-  background: rgba(0,0,0,0.6);
+  background: rgba(0, 0, 0, 0.6);
   padding: 18px 20px;
   color: #fff;
+  font-size: 15px;
+  line-height: 1.6;
 }
 
-
-/* garante texto branco */
+/* garante tudo branco */
 .banner-texto,
 .banner-texto p,
 .banner-texto strong {
   color: #fff;
 }
+
 
   </style>
 </head>
