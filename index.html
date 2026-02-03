@@ -145,10 +145,11 @@
 
 .banner img {
   width: 100%;
-  height: 130%;
-  object-fit: cover; /* 🔥 deixa a imagem horizontal automaticamente */
-  object-position: center;
+  max-height: 320px;      /* controla a altura */
+  object-fit: cover;     /* corta a imagem sem deformar */
+  display: block;
 }
+
 
 .banner-texto,
 .banner-texto p,
