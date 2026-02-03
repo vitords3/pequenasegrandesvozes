@@ -171,10 +171,13 @@
   color: #fff;
 }
     
-@media (max-width: 480px) {
+@media (max-width: 768px) {
+  .banner {
+    overflow: visible; /* deixa crescer */
+  }
+
   .banner-texto {
-    font-size: 14px;
-    padding: 16px;
+    position: relative; /* 🔑 texto vira parte do fluxo */
   }
 }
 
