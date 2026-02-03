@@ -152,18 +152,18 @@
 
 /* texto sempre abaixo da imagem */
 .banner-texto {
-  position: absolute;
+  position: absolute;          /* 🔑 fica por cima da imagem */
   bottom: 0;
   left: 0;
   width: 100%;
   padding: 18px 20px;
 
-  background: linear-gradient(
-    to top,
-    rgba(0, 0, 0, 0.75),
-    rgba(0, 0, 0, 0.35),
-    rgba(0, 0, 0, 0)
-  );
+  background: rgba(0, 0, 0, 0.35); /* 👈 TRANSPARÊNCIA REAL */
+  color: #fff;
+
+  backdrop-filter: blur(2px);  /* ✨ opcional: efeito moderno */
+}
+
 
   color: #fff;
 }
