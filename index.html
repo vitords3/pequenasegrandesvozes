@@ -332,11 +332,21 @@ function abrirModal(tipo) {
 
 
   if (tipo === "neuro") {
-    titulo.innerText = "Reabilitação Neurológica";
-    texto.innerText =
-      "Intervenção voltada à recuperação e estimulação das funções neurológicas relacionadas à comunicação.";
-    img.src = "neuro.png";
-  }
+  titulo.innerText = "Reabilitação Neurológica";
+  texto.innerHTML = `
+    <p>
+      O paciente com diagnóstico de AVC, Parkinson, ELA, TCE e Esclerose Múltipla
+      é avaliado pelo fonoaudiólogo e deve receber atendimento para adequação
+      e estimulação dos distúrbios da comunicação, cognição e deglutição.
+    </p>
+
+    <p>
+      Com o decorrer dos anos, perdemos funções importantes que podem ser
+      mantidas através de exercícios específicos.
+    </p>
+  `;
+  img.src = "neuro.png";
+}
 
   if (tipo === "motricidade") {
     titulo.innerText = "Motricidade Orofacial";
