@@ -350,12 +350,40 @@ function abrirModal(tipo) {
   img.src = "neuro.png";
 }
 
-  if (tipo === "motricidade") {
-    titulo.innerText = "Motricidade Orofacial";
-    texto.innerText =
-      "Trabalho focado no equilíbrio, força e funcionalidade dos músculos da face e da boca.";
-    img.src = "motricidade.png";
-  }
+ if (tipo === "motricidade") {
+  titulo.innerText = "Motricidade Orofacial";
+  texto.innerHTML = `
+    <p>
+      A motricidade orofacial contribui para que as estruturas da face funcionem
+      de forma harmônica e eficiente.
+    </p>
+
+    <p>
+      Durante a avaliação do paciente, são observadas funções como respiração,
+      sucção, mastigação, deglutição e fala.
+    </p>
+
+    <p>
+      Algumas alterações, como hábitos deletérios (chupar dedo, roer unhas ou
+      respirar pela boca), podem causar problemas na arcada dentária, na fala,
+      na respiração e no desenvolvimento facial, principalmente em crianças.
+    </p>
+
+    <p>
+      Outras causas incluem: fissuras labiopalatinas e malformações,
+      alterações dento-oclusais, desproporções maxilo-mandibulares,
+      alterações do tecido mole que compõem o sistema estomatognático,
+      tônus alterado de língua, doenças respiratórias, disfunções
+      temporomandibulares, dor orofacial, traumatismos, queimaduras,
+      perfurações e câncer.
+    </p>
+
+    <p>
+      Também requer avaliação e intervenção adequada.
+    </p>
+  `;
+  img.src = "motricidade.png";
+}
 
   if (tipo === "tvns") {
     titulo.innerText = "TVNS";
