@@ -466,22 +466,22 @@ function abrirModal(tipo) {
   img.src = "motricidade.png";
 }
 
-  if (tipo === "tvns") {
-    titulo.innerText = "TVNS";
-    texto.innerHTML =
-      <p>
-       A Estimulação Transcutânea do Nervo Vago é uma técnica de neuromodulação não invasiva que usa impulsos elétricos suaves, geralmente no pavilhão auricular, para ativar o nervo vago. 
-      </p>
-    
-      <p>
-      Ela regula o sistema nervoso autônomo, promovendo equilíbrio entre simpático e parassimpático, sendo usada para tratar depressão, ansiedade, epilepsia, dor crônica, insônia e melhorar a cognição.
-      </p>
+ if (tipo === "tvns") {
+  titulo.innerText = "TVNS";
+  texto.innerHTML = `
+    <p>
+     A Estimulação Transcutânea do Nervo Vago é uma técnica de neuromodulação não invasiva que usa impulsos elétricos suaves, geralmente no pavilhão auricular, para ativar o nervo vago. 
+    </p>
+    <p>
+    Ela regula o sistema nervoso autônomo, promovendo equilíbrio entre simpático e parassimpático, sendo usada para tratar depressão, ansiedade, epilepsia, dor crônica, insônia e melhorar a cognição.
+    </p>
+    <p>
+    Favorece benefícios em certas condições neurológicas como AVC, Alzheimer, enxaqueca, melhora a deglutição sendo um apoio na reabilitação de pacientes disfágicos e com alterações na fala. Reduz dor e inflamação, auxilia no equilíbrio.
+    </p>
+  `;
+  img.src = "tvns.png";
+}
 
-      <p>
-      Favorece benefícios em certas condições neurológicas como AVC, Alzheimer, enxaqueca, melhora a deglutição sendo um apoio na reabilitação de pacientes disfágicos e com alterações na fala. Reduz dor e inflamação, auxilia no equilíbrio
-      </p>
-    img.src = "tvns.png";
-  }
 
   if (tipo === "mentoria") {
     titulo.innerText = "Mentoria";
